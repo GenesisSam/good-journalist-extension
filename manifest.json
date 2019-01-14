@@ -8,12 +8,11 @@
     "storage",
     "webRequest"
   ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": true
-  },
-  "browser_action": {
-    "default_title": "Inject!"
-  },
+  "content_scripts": [{
+    "run_at": "document_end",
+    "matches": ["http://www.nextdaily.co.kr/*"],
+    "js": ["inject.js"]
+    // "css": ["css/mycss.css"]
+  }],
   "manifest_version": 2
 }
