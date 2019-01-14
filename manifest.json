@@ -1,0 +1,19 @@
+{
+  "name": "Good Journalist",
+  "version": "1.0",
+  "description": "I want see good journalist's article",
+  "permissions": [
+    "*://*/*",
+    "tabs",
+    "storage",
+    "webRequest"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Inject!"
+  },
+  "manifest_version": 2
+}
